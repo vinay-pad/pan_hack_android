@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/xxx"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:background="@drawable/bg"
+    tools:context=".MainActivity" >
+   
+    <Button
+        android:id="@+id/Loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password_edit"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="31dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="          Login          " />
+
+    <TextView
+        android:id="@+id/textView2_pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/password_edit"
+        android:layout_alignBottom="@+id/password_edit"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="17dp"
+        android:text="Password" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/Loginbutton"
+        android:layout_centerInParent="true"
+        android:src="@drawable/pan_logo" />
+
+    <EditText
+        android:id="@+id/password_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1_usname"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/uname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1_usname"
+        android:layout_alignBottom="@+id/textView1_usname"
+        android:layout_alignLeft="@+id/password_edit"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/textView1_usname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/textView2_pass"
+        android:layout_marginTop="42dp"
+        android:text="Username" />
+   
+</RelativeLayout>
